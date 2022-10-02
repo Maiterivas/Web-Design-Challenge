@@ -3,186 +3,188 @@
 
 <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-    <title>Web Design Challenge</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
-
-    <!-- Favicons -->
-    <link href="../static/img/favicon.png" rel="icon">
-    <link href="../static/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
-
-   
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Template Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet">
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <title>Weather Visualizations</title>
 </head>
 
 <body>
     <!-- Make header and navbar -->
-    <header id="header" class="header d-flex align-items-center">			
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark fixed-top">
-                     
-                        <button class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown"
-                        aria-controls="navbarNavDropdown"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
-                    </button><a class="navbar-brand" href="index.html">Web Design Challenge</a>
-                       <!--aria-expanded="false"-->
-                        <!--aria-label="Toggle navigation"> --> 
-                        
-                        
-                            <ul class="collapse navbar-collapse">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item"><a class="nav-link" href="#"> Dataset </a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#dashboard"> Dashboard </a></li>
-                                    <li class="nav-item dropdown">
-                                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Visualizations </a>
-                                        <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#"> Cloudiness </a></li>
-                                        <li><a class="dropdown-item" href="#"> Humidity </a></li>
-                                        <li><a class="dropdown-item" href="#"> Max. Temperature </a></li>
-                                        <li><a class="dropdown-item" href="#"> Wind Speed </a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </ul>
+    <div class="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        
+            <a class="navbar-brand" style="background-color: #b2beb5;" href="index.html">Weather Visualizations</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuL" 
+                        role="button" 
+                        data-toggle="dropdown" 
+                        aria-haspopup="true" 
+                        aria-expanded="false">
+                            Visualizations
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuL">
+                            
+                            <a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="visualizations/humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="visualizations/max_temp.html">Maximum Temperature</a>
+                            <a class="dropdown-item" href="visualizations/wind_speed.html">Wind Speed</a>
                         </div>
-                    </nav>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="visualizations/comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="visualizations/dataset.html">Dataset</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
     </header>
     <!-- End Header -->
     
-
-        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-           
-
-        </div>
     
 
     <div class="jumbotron">
         <h2>
             <br>
-            Welcome to my Weather Visualizations Website!
+            Welcome to my Weather Visualizations Website! 
         </h2>
         <br>
         <p>
             For this assignment, I used my ouput visualizations from WeatherPy, a previous activity using Python and API's. 
-            We were asked to create a script to analyze and visualize the weather of over 500 cities of varying distance from the equator. 
-            First, we showcased the following relationships for the whole set, and then the whole set split up by hemisphere (Northern/Southern): <br> <br>
+            We were I was asked to create a script to analyze and visualize the weather of over 500 cities of varying distance 
+            from the equator using CityPy Python Library and OpenWeatherMap API. First, I was asked to showcase the following relationships 
+            for the whole set, and then the whole set split up by hemisphere (Northern/Southern): <br> <br>
             
             - Temperature (F) vs. Latitude <br>
             - Humidity (%) vs. Latitude <br>
             - Cloudiness (%) vs. Latitude <br>
             - Wind Speed (mph) vs. Latitude <br>
+        <br>
+        Before delving into the results and visualizations of my analysis of the cities found, there was an important limitation regarding 
+        the dataset to address. The PyCity library used does not have much documentation regarding it, so I am unable to find much information on it. 
+        However, based off the number of cities retrieved, it's not inclusive of all the cities in the world. Tthe number of cities I was able to successfully 
+        retrieve weather data for only make up about 5% of all cities in the world, so we cannot assume that conclusions found based off the results in this dataset 
+        would be applicable to locations outside of it.
         </p>
         <br>
         <p>
-            <a class="btn btn-primary btn-large" href="#">About me here</a>
+            <a class="btn btn-primary btn-large" href="https://github.com/maiterivas/Python-API-Challenge">View Previous Repository Here</a>
         </p>
     </div>
-    <div id="dashboard">
+    <div id="dashboard"> <hr>
     <h1>
         Visualizations Dashboard
     </h1>
     </div>
-    <p>
+    <p style="text-align:center;">
         These visualizations all compare latitude to another variable, and each have links to pages with their corresponding analyses.
     </p>
     <p>
-        <a class="btn" href="visualizations/dataset.html">View full dataset here»</a>
+        <a class="btn-data" href="visualizations/dataset.html">Full dataset here»</a>
     </p>
     <div class="row">
-        <a href="assets/images/Lat_vs_Cloudiness.png">
-        <div class="col-md-6">
-            <h3> vs. Cloudiness </h3>
-            <img src="assets/images/Lat_vs_Cloudiness.png" alt="Lat vs Cloudiness">
+        <a href="visualizations/cloudiness.html">
+        <div class="col-6">
+            <h4> Cloudiness </h4>
 
+            <img src="Resources/images/Lat_vs_Cloudiness.png" alt="Lat vs Cloudiness">
+    
         </div>
         </a>
         
-        <a href="assets/images/Lat_vs_Humidity.png">
-        <div class="col-md-6">
-            <h3> vs. Humidity </h3>
-            <img src="assets/images/Lat_vs_Humidity.png" alt="Lat vs Humidity">
+        <a href="visualizations/humidity.html">
+        <div class="col-6">
+            <h4> Humidity </h4>
+            <img src="Resources/images/Lat_vs_Humidity.png" alt="Lat vs Humidity">
         </div>
         </a>
     </div>
     <div class="row">
-        <a href="assets/images/Lat_vs_Max_Temp.png">
-        <div class="col-md-6">
-            <h3> vs. Max Temperature </h3>
-            <img src="assets/images/Lat_vs_Max_Temp.png" alt="Lat vs Max Temperature">
+      <a href="visualizations/max_temp.html">
+        <div class="col-6">
+            <h4> Max Temperature </h4>
+            <img src="Resources/images/Lat_vs_Max_Temp.png" alt="Lat vs Max Temperature">
         </div>
         </a>
-        <a href="assets/images/Lat_vs_Wind_Speed.png">
-        <div class="col-md-6">
-            <h3> vs. Wind Speed </h3>
-            <img src="assets/images/Lat_vs_Wind_Speed.png" alt="Lat vs Wind Speed">
+    
+        <a href="visualizations/wind_speed.html">
+        <div class="col-6">
+            <h4> Wind Speed </h4>
+            <img src="Resources/images/Lat_vs_Wind_Speed.png" alt="Lat vs Wind Speed">
         </div>
         </a>
+        
     </div>
-    <h1> Extra Visualizations </h1>
+    <br>
+        <br>
+    <hr>
+    <div class="container">
+    <h1> Bonus Visualizations </h1> <hr>
+    <br>
     <h2>
         Northern Hemisphere
     </h2>
-    <p>
-        Data split up by Northern Hemisphere Latitudes.
+    <p style="text-align:center;">
+        Data split up by Northern Hemisphere Latitudes, for reference.
     </p>
    
     <div class="row">
         <div class="col-md-6">
-            <img src="assets/images/North_Lat_vs_Cloudiness.png" alt="North Lat vs Cloudiness">
+            <img src="Resources/images/North_Lat_vs_Cloudiness.png" alt="North Lat vs Cloudiness">
         </div>
         <div class="col-md-6">
-            <img src="assets/images/North_Lat_vs_Humidity.png" alt="North Lat vs Humidity">
+            <img src="Resources/images/North_Lat_vs_Humidity.png" alt="North Lat vs Humidity">
         </div>
     </div>
     <div class="row">
         <div class="col-md-6">
-            <img src="assets/images/North_Lat_vs_Max_Temp.png" alt="North Lat vs Max_Temp">
+            <img src="Resources/images/North_Lat_vs_Max_Temp.png" alt="North Lat vs Max_Temp">
         </div>
         <div class="col-md-6">
-            <img src="assets/images/North_Lat_vs_Wind_Speed.png" alt="North Lat vs Wind_Speed">
+            <img src="Resources/images/North_Lat_vs_Wind_Speed.png" alt="North Lat vs Wind_Speed">
         </div>
     </div>
+    <hr>
     <h2>
         Southern Hemisphere
     </h2>
-    <p>
-        Data split up by Southern Hemisphere Latitudes.
+    <p style="text-align:center;">
+        Data split up by Southern Hemisphere Latitudes, for reference.
     </p>
     
     <div class="row">
         <div class="col-md-6">
-            <img src="assets/images/South_Lat_vs_Cloudiness.png" alt="South Lat vs Cloudiness">
+            <img src="Resources/images/South_Lat_vs_Cloudiness.png" alt="South Lat vs Cloudiness">
         </div>
         <div class="col-md-6">
-            <img src="assets/images/South_Lat_vs_Humidity.png" alt="South Lat vs Humidity">
+            <img src="Resources/images/South_Lat_vs_Humidity.png" alt="South Lat vs Humidity">
         </div>
     </div>
     <div class="row">
         <div class="col-md-6">
-            <img src="assets/images/South_Lat_vs_Max_Temp.png" alt="South Lat vs Max_Temp">
+            <img src="Resources/images/South_Lat_vs_Max_Temp.png" alt="South Lat vs Max_Temp">
         </div>
         <div class="col-md-6">
-            <img src="assets/images/South_Lat_vs_Wind_Speed.png" alt="South Lat vs Wind_Speed">
+            <img src="Resources/images/South_Lat_vs_Wind_Speed.png" alt="South Lat vs Wind_Speed">
         </div>
     </div>
+
 </div>
 </div>
-</div>
+
+
+</body>
+</html>

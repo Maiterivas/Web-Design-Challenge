@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+    <title>Comparison</title>
+</head>
+
+<body>
+    <!-- Make header and navbar -->
+    <div class="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        
+            <a class="navbar-brand" style="background-color: #b2beb5;" href="../index.html">Weather Visualizations</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuL" 
+                        role="button" 
+                        data-toggle="dropdown" 
+                        aria-haspopup="true" 
+                        aria-expanded="false">
+                            Visualizations
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuL">
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="max_temp.html">Maximum Temperature</a>
+                            <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dataset.html">Dataset</a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <h1> Comparison Overview </h1>
+    <br>
+
+    <div class="container">
+    
+        <p>
+        From the 4 visualizations analyzed, most did not have a clear relationship between cities' latitudes and the plot's corresponding 
+        variables: Cloudiness, Humidity, Maximum Temperature, and Wind Speed - except the Maximum Temperature. In the original assignment, I was able to split up the 
+        data into Northern and Southern Hemispheres, to take a deeper analysis by latitude, and attempt to see stronger relationships 
+        when splitting up the latitudes. However, I did not find any strong relationships between latitude values and how they can affect
+        cities' aspects of weather, except for temperature. All in all, we can assume that as cities' latitudes get closer to 0, which is 
+        where the Earth's equator is, temperature tends to increase. A summary of each relationship:
+        <br>
+        <br>
+        <h6>City Maximum Temperature (F) versus Latitude:</h6>
+        
+
+    When comparing latitude and the maximum temperature of all cities, it seems that the temperature gets higher as it gets closer to 0 latitude, which is where the equator is. 
+    Conversely, it seems that the temperature gets lower the further away from 0 latitude it is.
+            <br>
+            <br>
+    <h6>City Humidity (%) versus Latitude:</h6>
+        
+
+    Comparing all city's humidity and their corresponding latitude, or location, it seems that there is not much correlation between the two variables. However, at a first glance, 
+    it seems that most values tend to be over 20% humidity.
+            <br>
+            <br>
+    <h6>City Cloudiness (%) versus Latitude:</h6>
+        
+
+    When comparing all city's cloudiness and latitude, there doesn't seem to be any kind of correlation between the two variables. Even when trying to take a deeper analysis, all the 
+    datapoints seem to be scattered all over the plot in no particular order.
+            <br>
+            <br>
+    <h6>City Wind Speed (mph) versus Latitude:</h6>
+        
+
+    Lastly, when comparing all city's wind speed (mph) and their latitude, there doesn't appear to be any type of defined relationship between them. However, 
+    most values tend to stay below 20 mph overall, with only a few being slightly above that number.
+
+
+            <br>
+            <br>
+        </p>
+        <br>
+        <br>
+
+    
+
+    </div>
+
+    <div class="container">
+    <div id="dashboard"> <hr>
+    <h1>
+        Visualizations Dashboard
+    </h1>
+    <br>
+    <div class="row">
+        <a href="cloudiness.html">
+        <div class="col-6">
+            <h4> Cloudiness </h4>
+            <img src="../Resources/images/Lat_vs_Cloudiness.png" alt="Lat vs Cloudiness">
+    
+        </div>
+        </a>
+        
+        <a href="humidity.html">
+        <div class="col-6">
+            <h4> Humidity </h4>
+            <img src="../Resources/images/Lat_vs_Humidity.png" alt="Lat vs Humidity">
+        </div>
+        </a>
+    </div>
+    <div class="row">
+      <a href="max_temp.html">
+        <div class="col-6">
+            <h4> Max Temperature </h4>
+            <img src="../Resources/images/Lat_vs_Max_Temp.png" alt="Lat vs Max Temperature">
+        </div>
+        </a>
+    
+        <a href="wind_speed.html">
+        <div class="col-6">
+            <h4> Wind Speed </h4>
+            <img src="../Resources/images/Lat_vs_Wind_Speed.png" alt="Lat vs Wind Speed">
+        </div>
+        </a>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
